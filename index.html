@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Photo" class="profile-img">
+        <h1>Hello, I'm <span class="highlight">Tanishk Tyagi</span></h1>
+        <p>I’m passionate about Python, Machine Learning, and Web Development.</p>
+        <p>Here’s a glimpse of my work and how to reach out to me.</p>
+        <a href="{{ url_for('contact') }}" class="button">Contact Me</a>
+    </div>
+</body>
+</html>
